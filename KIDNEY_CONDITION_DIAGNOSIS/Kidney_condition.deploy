@@ -51,7 +51,7 @@ if uploaded_file is not None:
     class_name,confidence=predict(uploaded_file)
     st.markdown(f'<span style="color:blue; font-size:30px;"><b>{class_name}</b></span>', unsafe_allow_html=True)
     if class_name=="Normal":
-        st.write("A Healty kidney")
+        st.write("A Healthy kidney")
     elif class_name=="Stone":
         st.write(' A solid crystals form your kidneys from substances in the urine.')
     elif class_name=="Tumor":
